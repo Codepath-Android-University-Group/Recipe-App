@@ -29,7 +29,7 @@
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivImage"
         android:textColor="@color/dark_brown"
-        android:textSize="24sp"
+        android:textSize="22sp"
         tools:text="Kate" />
 
     <TextView
@@ -51,7 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_below="@+id/tvOverview"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
         android:background="#332F2F2F" />
 
 </RelativeLayout>
