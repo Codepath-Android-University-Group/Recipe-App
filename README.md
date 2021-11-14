@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# UltimateFoodMaker
+# UltimateFoodMaker - Cook, Eat, Repeat.
 
 ## Table of Contents
 1. [Overview](#Overview)
