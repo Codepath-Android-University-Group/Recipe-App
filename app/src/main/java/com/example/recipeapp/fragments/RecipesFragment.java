@@ -35,7 +35,7 @@ public class RecipesFragment extends Fragment {
 
     public static final String TAG = "RecipesFragment";
 
-    public static final String  NOW_PLAYING_URL = "https://api.spoonacular.com/recipes/random?veryPopular=true&number=10&apiKey=0dd3015721b54bf2aabec3630be6b00d";
+    public static final String  NOW_PLAYING_URL = "https://api.spoonacular.com/recipes/random?veryPopular=true&number=10&apiKey=37409a21e1a0477489534054d3cf2185";
     private RecyclerView rvRecipes;
     private SwipeRefreshLayout swipeContainer;
     protected RecipeAdapter adapter;
