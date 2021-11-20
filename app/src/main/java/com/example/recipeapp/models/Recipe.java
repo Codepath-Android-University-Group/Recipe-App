@@ -5,8 +5,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 @Parcel
 public class Recipe {
@@ -16,6 +19,7 @@ public class Recipe {
     String title;
     String instructions;
     int readyInMinutes;
+    File file;
 
     // empty constructor needed by the Parceler library
     public Recipe() {}
@@ -47,12 +51,27 @@ public class Recipe {
     //   return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath);
     // }
 
+
+    public File getImage() {
+        return file;
+    }
+    public void setImage(File parseFile) {
+        this.file = parseFile;
+    }
     public String getTitle() {
         return title;
     }
 
     public String getInstructions() {
         return instructions;
+    }
+
+    public void setDescription(String description){
+        this.title = description;
+    }
+
+    public void setInstructions(String instructions){
+        this.instructions = instructions;
     }
 
     public double getReadyInMinutes() {

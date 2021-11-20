@@ -91,11 +91,14 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
             //  imageUrl = movie.getPosterPath();
             //  }
 
-
-            Glide.with(context).load(recipe.getPosterPath()).into(ivImage);
+            if(recipe.getImage() == null) {
+                Glide.with(context).load(recipe.getPosterPath()).into(ivImage);
+            }else{
+                Glide.with(context).load(recipe.getImage()).into(ivImage);
+            }
 
             // 1. Register click listener on the whole view
-           /* container.setOnClickListener(new View.OnClickListener() {
+            container.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     // 2. Navigate to a new activity on tap
@@ -103,7 +106,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
                     i.putExtra("recipe", Parcels.wrap(recipe));
                     context.startActivity(i);
                 }
-            });*/
+            });
         }
     }
 }
