@@ -26,6 +26,7 @@ public class Recipe {
 
     public Recipe(JSONObject jsonObject) throws JSONException {
         //backdropPath = jsonObject.getString("backdrop_path");
+        if(jsonObject.getString("image") != null)
         image = jsonObject.getString("image");
         title = jsonObject.getString("title");
         String unformattedInstructions = jsonObject.getString("instructions");

@@ -78,7 +78,7 @@ public class SearchFragment extends Fragment {
                     Toast.makeText(getContext(), "Search cannot be empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                url = String.format("https://api.spoonacular.com/recipes/random?number=10&tags=%s&apiKey=37409a21e1a0477489534054d3cf2185",query);
+                url = String.format("https://api.spoonacular.com/recipes/random?number=10&tags=%s&apiKey=c0b115df33704a4abfe201575c615944",query);
                 queryPosts();
             }
         });

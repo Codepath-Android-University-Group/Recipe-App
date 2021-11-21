@@ -26,6 +26,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.action_recipe_book:
                         fragment = new RecipeBookFragment();
+                            Bundle bundle = new Bundle();
+                            bundle.putParcelable("Add Recipe", getIntent().getParcelableExtra("Add recipe"));
+                            // set Fragmentclass Arguments
+                            fragment.setArguments(bundle);
                         break;
                     case R.id.action_user_recipes:
                     default:

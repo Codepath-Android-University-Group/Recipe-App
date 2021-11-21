@@ -91,10 +91,10 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
             //  imageUrl = movie.getPosterPath();
             //  }
 
-            if(recipe.getImage() == null) {
+            if(recipe.getPosterPath() != null) {
                 Glide.with(context).load(recipe.getPosterPath()).into(ivImage);
             }else{
-                Glide.with(context).load(recipe.getImage()).into(ivImage);
+                ivImage.setImageResource(R.drawable.logo);
             }
 
             // 1. Register click listener on the whole view
