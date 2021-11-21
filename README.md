@@ -43,6 +43,9 @@ Be the ultimate chef by finding popular recipes matched to your specifications. 
 - [ ] Other basic information like rating, price and something else about such restaurants will be displayed
 
 ### App Walkthough GIF
+Final:
+<img src= "https://i.imgur.com/QfSiACF.gif" width=250><br>
+
 Week 3:
 <img src= "https://i.imgur.com/EcSCm2H.gif" width=250><br>
 
