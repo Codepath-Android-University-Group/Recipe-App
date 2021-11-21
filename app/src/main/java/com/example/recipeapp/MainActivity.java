@@ -63,13 +63,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_search:
                         fragment = new SearchFragment();
                         break;
-                    case R.id.action_recipe_book:
-                        fragment = new RecipeBookFragment();
-                            Bundle bundle = new Bundle();
-                            bundle.putParcelable("Add Recipe", getIntent().getParcelableExtra("Add recipe"));
-                            // set Fragmentclass Arguments
-                            fragment.setArguments(bundle);
-                        break;
                     case R.id.action_user_recipes:
                     default:
                         fragment = new UserRecipesFragment();

@@ -37,12 +37,6 @@
         android:textSize="18dp"
         tools:text="Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese." />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add to Recipe Book" />
-
 
 </LinearLayout>
 </ScrollView>

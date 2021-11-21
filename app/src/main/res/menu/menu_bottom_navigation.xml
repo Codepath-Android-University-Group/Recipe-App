@@ -18,11 +18,7 @@
         android:icon="@drawable/ic_baseline_add_circle_outline_24"
         android:title=""
         app:showAsAction="always" />
-    <item
-        android:id="@+id/action_recipe_book"
-        android:icon="@drawable/ic_baseline_bookmark_border_24"
-        android:title=""
-        app:showAsAction="always" />
+
     <item
         android:id="@+id/action_user_recipes"
         android:icon="@drawable/ic_baseline_account_circle_24"
